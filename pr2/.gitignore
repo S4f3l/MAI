@@ -1,0 +1,36 @@
+cd ~/PycharmProjects
+cat > .gitignore << 'EOF'
+# PyCharm
+.idea/
+
+# Виртуальные окружения
+venv/
+.venv/
+env/
+ENV/
+
+# Окружение, созданное прямо в корне проекта (ваш случай!)
+Lib/
+Scripts/
+Include/
+libs/
+pyvenv.cfg
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Сборки
+build/
+dist/
+*.egg-info/
+
+# Тесты
+.pytest_cache/
+
+# Прочее
+*.log
+.DS_Store
+EOF
